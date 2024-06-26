@@ -11,5 +11,9 @@ createApp({
         ],
     }
     },
-    
+    methods: {
+        removeTodo(i){
+            this.tasks.splice(i,1)
+        }
+    }
 }).mount('#app')
