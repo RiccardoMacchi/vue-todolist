@@ -9,14 +9,21 @@
 </head>
 <body>
     <div id="app">
-        <ul>
-            <li v-for="(item,i) in tasks" :class="(item.done === true) ? 'barred' : ''" :key="i" @click="toggleDone">{{ item.text }} <span @click="removeTodo(i)">X</span></li>
-        </ul>
-
-        <div>
-            <input v-model="newItem.text">
-            <div @click="addTask">AGGIUNGI</div>
+        <div id="wrapper">
+            <div id="logo">
+                <img :src="logoImg" alt="">
+                <h1>ToDo List</h1>
+            </div>
+            <ul>
+                <li v-for="(item,i) in tasks" :class="(item.done === true) ? 'barred' : ''" :key="i" @click="toggleDone(i)">{{ item.text }} <span @click="removeTodo(i)">X</span></li>
+            </ul>
+    
+            <div id="add_task">
+                <input v-model="newItem.text">
+                <div id="add_add" @click="addTask">AGGIUNGI</div>
+            </div>
         </div>
+
     </div>
     
     <script src="js/main.js"></script>

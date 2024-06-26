@@ -4,6 +4,54 @@
     box-sizing: border-box;
 }
 
+ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+/* Logo */
+
+#logo {
+    max-width: 40%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#logo img {
+    width: 100%;
+}
+
+#wrapper {
+    width: 70%;
+    margin: 30px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+
+#wrapper span {
+    float: right;
+    margin-right: 20px;
+    
+}
+
+/* Aggiungi */
+#add_task{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#add_add {
+    margin: 10px auto;
+    padding: 5px 20px;
+    background-color: greenyellow;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+/* task barrata */
 .barred {
     text-decoration: line-through;
 }

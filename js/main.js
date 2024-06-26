@@ -3,6 +3,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+        logoImg : "img/boolean.png",
         newItem : {
             text : "",
             done : false,
@@ -20,14 +21,17 @@ createApp({
             this.tasks.splice(i,1)
         },
         addTask(){
-            this.tasks.unshift(this.newItem);
+            console.log(this.newItem)
+            this.tasks.unshift({...this.newItem});
             // this.newItem.text = ""
         },
-        toggleDone(){
-            if (this.tasks.done === true){
-                this.tasks.done = false
+        toggleDone(i){
+            console.log("hai cliccato")
+            console.log(this.tasks[i].done)
+            if (this.tasks[i].done === true){
+                this.tasks[i].done = false
             } else {
-                this.tasks.done = true
+                this.tasks[i].done = true
             }
         },
     }
