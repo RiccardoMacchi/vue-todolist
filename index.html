@@ -19,7 +19,8 @@
             </ul>
     
             <div id="add_task">
-                <input v-model="newItem.text">
+                <h4 v-show="show" class="error_text">*Inserisi un minimo di 5 caratteri</h4>
+                <input v-model="newItem.text" @keydown.enter="addTask">
                 <div id="add_add" @click="addTask">AGGIUNGI</div>
             </div>
         </div>

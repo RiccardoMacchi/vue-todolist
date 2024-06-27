@@ -30,9 +30,9 @@ ul li {
 
 
 #wrapper span {
+    display: inline-block;
     float: right;
     margin-right: 20px;
-    
 }
 
 /* Aggiungi */
@@ -54,4 +54,12 @@ ul li {
 /* task barrata */
 .barred {
     text-decoration: line-through;
+}
+
+/* Errore */
+
+.error_text {
+    margin: 10px auto;
+    color: red;
+    font-size: 0.9rem;
 }
